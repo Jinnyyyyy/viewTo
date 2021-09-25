@@ -26,10 +26,11 @@ Bootstrap
 
 Getting Stared
 
+
+
 Next Steps 
 
 https://replit.com/@JinnyChoi1/project-2-wireframe#trello.png
 
-https://replit.com/@JinnyChoi1/project-2-wireframe#trello.png
 
 
