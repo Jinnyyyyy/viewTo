@@ -1,0 +1,14 @@
+<link rel='stylesheet' href='/stylesheets/home.css' />
+<%- include('../base/header') %>
+<div class="imgBackground">
+    <form action="/reviews/search" method="POST">
+            <div id="searchbar">
+                    <div class="input-field">
+                        <input class="searchbar" type="search" name="search" 
+                        placeholder="Search" autocomplete="off">
+                        <button type="submit" class="searchBtn">Search</button>  
+                    </div>
+            </div>   
+    </form>
+</div>  
+<%- include('../base/footer') %>

@@ -1,0 +1,40 @@
+<link rel='stylesheet' href='/stylesheets/post.css' />
+<%- include('../base/header') %>
+<div>
+  <img src="/images/icecream5.jpg" id="backgroundcolor1">
+</div>
+<div id="colortitle"><h3>Recent Activity</h3></div>
+<section  class="tablecontainer">
+      <% posts.forEach(function(p){  %>
+          <div class="box">
+            <form action="/reviews/delete/<%= p._id %>?_method=DELETE"
+              class="delete-form" method="POST">
+            <button type="submit" class="boxbtn">X</button>
+            </form>
+            <div class="stylename"><h4><%= p.name %></h4></div>
+            <%= p.location %>
+            <div class="ratings">
+                <p class="pull-right"> reviews</p>
+                <p>
+                    <% for (var i = 0; i < 5; i++) { %>
+                        <span class="glyphicon glyphicon-star<%= (i < p.rate - 0.5)? '' : '-empty'%>"></span>
+                    <% } %>
+                </p>
+            </div>
+            <p class="indexDescription"><%= p.description %></p>                         
+            <div>
+              <% if (typeof p.comment !== 'undefined') { %>
+                <% p.comment.forEach(function(c) { %>
+                  <p class="userUser"><%= c.user %></p>
+                  <p class="userComment"><%= c.comment %></p>
+                  <% }) %>
+                <% } else {} %>
+            </div>
+              <form action="/reviews/addComment/<%= p._id %>" method="POST">
+                <input name="comment" type="text"><button type="submit" class="commentbtn">Add Comment</button>
+              </form>
+          </div>
+      <% }) %>
+</section>
+<%- include('../base/footer') %>
+

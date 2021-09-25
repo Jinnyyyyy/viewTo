@@ -1,0 +1,105 @@
+h1{
+    text-align: center;
+    padding: 15px;
+}
+
+div{
+    display: block;
+}
+
+.btnReview{
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.name {
+    text-align: center;
+}
+
+#name {
+    padding: 5px;
+    margin-top: 12px;
+    width: 370px;
+}
+
+.location {
+    text-align: center;
+}
+
+#location {
+    padding: 5px;
+    margin-top: 12px;
+    width: 370px;
+}
+
+.description {
+    text-align: center;
+}
+
+/* 
+#description {
+    padding: 100px;
+    width: 30%;
+} */
+
+.Postbtn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btnReview {
+    /* background-color:#04AA6D; */
+    background-color:steelblue;
+    color: white;
+    width: 150px;
+    height: 30px;
+    border: solid steelblue;
+    border-radius: 10px;
+}
+
+.rate {
+    text-align: center;
+    height: 55px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+}
+
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    width:30px;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: ' ★ ';
+}
+.rate > input:checked ~ label {
+    color: #FFEB3B;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #FFEB3B;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+#imageBackground {
+    background-repeat: no-repeat;
+    opacity: 70%;
+    height: 250px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}

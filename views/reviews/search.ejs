@@ -1,0 +1,36 @@
+<link rel='stylesheet' href='/stylesheets/post.css' />
+<%- include('../base/header') %>
+<section  class="tablecontainer">
+  <% if (typeof posts !== 'undefined') { %>
+          <div class="box">
+            <form action="/reviews/delete/<%= posts._id %>?_method=DELETE"
+              class="delete-form" method="POST">
+            <button type="submit" class="boxbtn">X</button>
+            </form>
+            <h4><%= posts.name %></h4>
+            <%= posts.location %>
+            <div class="ratings">
+                <p class="pull-right"> reviews</p>
+                <p>
+                    <% for (var i = 0; i < 5; i++) { %>
+                        <span class="glyphicon glyphicon-star<%= (i < posts.rate - 0.5)? '' : '-empty'%>"></span>
+                    <% } %>
+                </p>
+            </div>
+            <p class="indexDescription"><%= posts.description %></p>                         
+            <div>
+              <% if (typeof posts.comment !== 'undefined') { %>
+                <% posts.comment.forEach(function(c) { %>
+                  <p class="userUser"><%= c.user %></p>
+                  <p class="userComment"><%= c.comment %></p>
+                  <% }) %>
+                <% } else {} %>
+            </div>
+              <form action="/reviews/addComment/<%= posts._id %>" method="POST">
+                <input name="comment" type="text"><button type="submit" class="commentbtn">Add Comment</button>
+              </form>
+          </div>
+          <% } else {} %>
+</section>  
+<%- include('../base/footer') %>
+

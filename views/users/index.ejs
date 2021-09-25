@@ -1,0 +1,16 @@
+<link rel='stylesheet' href='/stylesheets/login.css' />
+<%- include('../base/header') %>
+<div class="both">
+    <h2>Log in to viewTo</h2>
+        <div class="subtitle">New to viewTo?</div>
+                <div class="right" id="right">
+                    <div class="logout" id="logout">
+                            <% if (user) { %>
+                                <a href="/logout">Log out</a>
+                            <% } else { %>
+                                <img src='images/google-icon.jpg'><a href="/auth/google">Log in with Google</a>
+                            <% } %>
+                    </div>
+                </div>
+            </div>    
+ <%- include('../base/footer') %>

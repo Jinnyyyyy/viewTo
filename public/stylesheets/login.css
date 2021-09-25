@@ -1,0 +1,36 @@
+h2 {
+    text-align: center;
+    height: 50px;
+    padding: 20px;
+}
+
+.subtitle {
+   text-align: center;
+   height: 40px;
+   padding: 20px;
+}
+
+.logout {
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    /* margin-left: 590px; */
+    padding: 15px;
+    width: 220px;
+    display: block;
+}
+
+img {
+    height: 30px;
+    margin-right: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+#right {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

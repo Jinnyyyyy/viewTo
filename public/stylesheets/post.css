@@ -1,0 +1,84 @@
+.box {
+    box-sizing: border-box; 
+    box-shadow: 0 4px 8px 0 lightslategray;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2); */
+    border-radius: 5px;
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 15px;
+    padding: 10px 7px;
+    height: 300px;
+}
+
+.tablecontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxbtn {
+    margin-left: 350px;
+    background-color: white;
+    border: none;
+}
+
+.commentbtn{
+    background-color: lightsalmon;
+    color: white;
+    border: none;
+    margin-left: 13px;
+}
+
+.indexDescription {
+    word-wrap:break-word;
+}
+
+.userComment{
+    /* margin-top: 60px; */
+    margin-left: 100px;
+    position: relative;
+}
+
+.userUser{
+    position: absolute;
+    margin-left: 10px;
+}
+   
+.stylename {
+    color: rgb(5, 141, 182);
+}
+
+.ratings {
+    color: rgba(247, 202, 24, 1);
+}
+
+.pull-right {
+    color: black;
+}
+
+#colortitle {
+    text-align: center;
+    color: rgb(216, 13, 13);
+}
+
+#backgroundcolor1 {
+    background-repeat: no-repeat;
+    opacity: 70%;
+    height: 310px;
+    width: 950px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* #backgroundcolor1 {
+    background-repeat: no-repeat;
+    margin-bottom: 200px;
+    opacity: 70%;
+    height: 310px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+ */

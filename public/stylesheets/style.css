@@ -1,0 +1,90 @@
+body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  list-style: none;
+}
+
+a {
+  list-style: none;
+}
+
+p {
+  list-style: none;
+}
+
+.loginbtn {
+  width: 70px;
+  height: 40px;
+  border-bottom:1px solid lightslategray;
+  float: right;
+}
+
+/* .nav-item:hover{
+  background-image:linear-gradient(
+     to right, 
+     #E7484F,
+     #E7484F 22.65%,
+     #F68B1D 65.3%,
+     #FCED00 89.95%
+   );
+ animation:slidebg 2s linear infinite;
+} */
+
+.logoName {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 85px;
+  margin-right: 30px;
+}
+
+.containerview {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 40px;
+  margin-top: 80px;
+}
+
+.boxcontainer {
+ width: 90vw;
+ text-align: center;
+ /* background-color:rgba(254, 250, 212, 1); */
+}
+
+.optionview {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  border-top: 1.5px solid lightslategray;
+  /* border-bottom: 1.5px solid lightslategray; */
+}
+
+#navbarNav {
+  text-align: center;
+   /* background-color:rgba(254, 250, 212, 1);  */
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   align-items: center; 
+}
+
+#homeView {
+  margin-right: 30px;
+}
+
+#homeView:hover {
+  border-bottom: 1px solid lightslategray;
+}
+
+#writeView{
+  margin-left: 30px;
+}
+
+#writeView:hover {
+  border-bottom: 1px solid lightslategray;
+}
+
+#preview:hover {
+  border-bottom: 1px solid lightslategray;
+}
