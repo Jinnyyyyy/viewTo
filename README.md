@@ -26,7 +26,7 @@ Bootstrap
 
 Getting Stared
 
-
+https://viewto.herokuapp.com/reviews/home
 
 Next Steps 
 
